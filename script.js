@@ -12,18 +12,16 @@ function playRound(player_selection, computer_selection) {
   ) {
     console.log(`You win! ${player_selection} Beats ${computer_selection}`);
     return 1;
-  } 
-  else if (
+  } else if (
     (computer_selection == "rock" && player_selection == "scissors") ||
     (computer_selection == "paper" && player_selection == "rock") ||
     (computer_selection == "scissors" && player_selection == "paper")
   ) {
     console.log(`You lose! ${computer_selection} Beats ${player_selection}`);
     return 2;
-  } 
-  else {
-    console.log(`Draw`);
-    return 0;
+  } else {
+    console.log("Draw");
+    return 3;
   }
 }
 
