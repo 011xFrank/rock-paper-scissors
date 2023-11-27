@@ -1,6 +1,5 @@
-const choices = ["rock", "paper", "scissors"];
-
 function getComputerChoice() {
+  const choices = ["rock", "paper", "scissors"];
   const choice_index = Math.floor(Math.random() * choices.length);
   return choices[choice_index];
 }
@@ -46,8 +45,8 @@ function game() {
     }
   }
 
-  console.log(player_scores);
-  console.log(computer_scores);
+  console.log(`Your score : ${player_scores}`);
+  console.log(`Computer's score : ${computer_scores}`);
 }
 
 game();
